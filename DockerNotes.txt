@@ -1,0 +1,14 @@
+docker ps -> lists all running containers
+docker ps -a or docker ps --all --> lists all containers
+
+docker volume ls
+docker volume prune
+
+
+Init Docker Container 
+docker run --name mongodb -d  -p 27017:27017 -v C:\Users\waran\Downloads\MongoVolume:/data/db mongo
+connect to shell:
+docker exec -it <container_name> <applicaiton>
+eg:
+docker exec -it ubuntu_bash bash	
+docker exec -it mongodb mongo
